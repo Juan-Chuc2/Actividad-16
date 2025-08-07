@@ -27,3 +27,16 @@ def show_book():
             print(f"{i}. ", end="")
             book.mostrar_info()
             j += 1
+
+def delete_book():
+    search_book = input("Ingrese el titulo del libro que desea buscar: ")
+    found = False
+    for book in list_books:
+        if book.titulo.lower() == search_book.lower():
+            list_books.remove(book)
+            print(f"\n El titulo {search_book} se ha eliminado correctamente")
+            found = True
+            break
+        if not found:
+            print(f"\n El estudiante {search_book} no se encontro")
+
