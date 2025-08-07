@@ -17,3 +17,13 @@ def add_books():
     except ValueError:
         print("El valor debe ser entero")
 
+def show_book():
+    if not list_books:
+        print("No se ha añadido ningun libro ")
+    else:
+        print("\n Lista de libros")
+        j = 1
+        for book in list_books:
+            print(f"{i}. ", end="")
+            book.mostrar_info()
+            j += 1
