@@ -24,7 +24,7 @@ def show_book():
         print("\n Lista de libros")
         j = 1
         for book in list_books:
-            print(f"{i}. ", end="")
+            print(f"{j}. ", end="")
             book.mostrar_info()
             j += 1
 
