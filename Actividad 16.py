@@ -40,3 +40,25 @@ def delete_book():
         if not found:
             print(f"\n El estudiante {search_book} no se encontro")
 
+while True:
+    print("---MENU---")
+    print("1. Agregar libro ")
+    print("2. Mostrar libros")
+    print("3. Eliminar libro")
+    print("4. Salir")
+    try:
+        option = int(input("Escoja una opcion "))
+        match option:
+            case 1:
+                add_books()
+            case 2:
+                show_book()
+            case 3:
+                delete_book()
+            case 4:
+                print("Fin del programa")
+                break
+            case _:
+                print("Erro ingrese unu entero")
+    except ValueError:
+        print("Ingrese un entero")
