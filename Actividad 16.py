@@ -25,7 +25,7 @@ def show_book():
         j = 1
         for book in list_books:
             print(f"{j}. ", end="")
-            book.mostrar_info()
+            book.mostrar_info_libros()
             j += 1
 
 def delete_book():
